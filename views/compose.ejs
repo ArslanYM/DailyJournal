@@ -1,6 +1,13 @@
 <%- include('partials/header') %>
-<form action="/compose" method="POST">
-    <input value="a" type="text" placeholder="Write Your Thoughts" name="journal">
-    <button type="submit" >Publish</button>
-</form>
-<%- include('partials/footer') %>
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" value="" type="text" placeholder="Write Your Thoughts" name="postTitle">
+            <label>Post</label>
+            <textarea class="form-control" name="postBody" id="" cols="30" rows="5"
+                placeholder="Write Your Thoughts"></textarea>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Publish</button>
+    </form>
+    <%- include('partials/footer') %>
