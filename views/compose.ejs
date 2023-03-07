@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
-<h1>Compose</h1>
-<input type="text"
-placeholder="Write Your Thoughts">
-<button type="submit" >Publish</button>
+<form action="/compose" method="POST">
+    <input value="a" type="text" placeholder="Write Your Thoughts" name="journal">
+    <button type="submit" >Publish</button>
+</form>
 <%- include('partials/footer') %>
